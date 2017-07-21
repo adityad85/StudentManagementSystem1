@@ -3,4 +3,5 @@
     <string name="title_activity_home">Home</string>
     <string name="title_activity_about">About</string>
     <string name="title_activity_add_student">AddStudent</string>
+    <string name="title_activity_student_profile">StudentProfile</string>
 </resources>
