@@ -22,8 +22,8 @@ public class MainParse extends Application {
     public void onCreate() {
         super.onCreate();
         Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
-                .applicationId("yDR6JbyKDXyPUGawVgQtV0vu3exDpiELY3oV3pgP")
-                .clientKey("PCv8rdLFJNAhdzUFgKdcEnx8nI4ZvZYRcrs6WIIX")
+                .applicationId("Xj5BfzKDMujSlrZ0r1XzzeEnOuBp5YpfQnRCnVuJ")
+                .clientKey("92H2uWPGuF2LPp6Mu15cj2EWfmZAbsAbQaEkiL8p")
                 .server("https://parseapi.back4app.com/")
                 .build()
         );

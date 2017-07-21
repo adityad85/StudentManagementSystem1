@@ -10,15 +10,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class Home extends AppCompatActivity {
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 
+import java.util.ArrayList;
+import java.util.List;
+
+public class Home extends AppCompatActivity {
+    private ArrayList<Project> projectlist;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        getData();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +67,22 @@ public class Home extends AppCompatActivity {
     }
 
 
-
-
+    public void getData() {
+        ParseQuery<ParseObject> q=new ParseQuery<ParseObject>("Projects");
+        q.addAscendingOrder("Name");
+        try {
+            List<ParseObject> a= q.find();
+            for(ParseObject ob:a){
+                Project p=new Project();
+                p.setName(ob.get("Name").toString());
+                p.setProjName(ob.get("ProjName").toString());
+                p.setRemarks(ob.get("Remarks").toString());
+                p.setYear(ob.get("Year").toString());
+                p.setCollege(ob.get("College").toString());
+                projectlist.add(p);
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
 }
