@@ -8,6 +8,27 @@
     tools:context="com.vijays.studentmanagementsystem.About"
     tools:showIn="@layout/activity_about"
     >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This App is created in order to manage ths information
+about students enrolled for Training/Internship under
+Sir Bhagwanjee das Mishra."
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Vijay Sachdeva"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"/>
 
 
 </RelativeLayout>

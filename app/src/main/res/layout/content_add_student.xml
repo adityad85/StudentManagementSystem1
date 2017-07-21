@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,4 +8,106 @@
     tools:context="com.vijays.studentmanagementsystem.AddStudent"
     tools:showIn="@layout/activity_add_student">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/enterName"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:textColorHint="@color/loginColor"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/enterName"
+        android:id="@+id/enterCollegeName"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter College Name"
+            android:textColorHint="@color/loginColor"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/enterCollegeName"
+        android:id="@+id/enterYear"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Year"
+            android:textColorHint="@color/loginColor"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:inputType="text"
+            android:textSize="18sp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/enterYear"
+        android:id="@+id/enterProjectName"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Project Name"
+            android:textColorHint="@color/loginColor"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:inputType="text"
+            android:textSize="18sp"/>
+    </android.support.design.widget.TextInputLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/enterTextArea"
+        android:layout_below="@id/enterProjectName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:inputType="textImeMultiLine"
+        android:background="@drawable/back"
+        android:layout_marginTop="15dp"
+        android:hint="Remarks"
+        android:gravity="center_horizontal"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:textColor="@color/whiteLight"
+        android:background="@color/colorPrimary"
+        android:id="@+id/uploadButton"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:onClick="jumpTOHomeScreen1"/>
+
+
+
+</RelativeLayout>

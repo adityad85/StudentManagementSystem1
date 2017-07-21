@@ -1,5 +1,6 @@
 package com.vijays.studentmanagementsystem;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -23,6 +24,11 @@ public class AddStudent extends AppCompatActivity {
     public boolean onSupportNavigateUp(){
         finish();
         return true;
+    }
+
+    public void jumpTOHomeScreen1(View v){
+        Intent i = new Intent(getApplicationContext(),Home.class);
+        startActivity(i);
     }
 
 }
