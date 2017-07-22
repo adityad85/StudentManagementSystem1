@@ -16,9 +16,11 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.parse.LogOutCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.ParseUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -86,9 +88,15 @@ public class Home extends AppCompatActivity {
 
         }
         if (id == R.id.action_logout) {
-            Intent intent = new Intent(getApplicationContext(), Login.class);
-            startActivity(intent);
-        }
+            ParseUser.logOutInBackground(new LogOutCallback() {
+                @Override
+                public void done(ParseException e) {
+                    Intent intent = new Intent(getApplicationContext(), Login.class);
+                    startActivity(intent);
+
+                }
+            });
+             }
 
 
         return super.onOptionsItemSelected(item);
