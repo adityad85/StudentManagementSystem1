@@ -16,15 +16,17 @@
         android:paddingRight="20dp"
         android:id="@+id/enterName"
         >
+
         <EditText
+            android:id="@+id/ename"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Name"
-            android:textColorHint="@color/loginColor"
+            android:inputType="text"
             android:text=""
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp"
-            android:inputType="text"/>
+            android:textColorHint="@color/loginColor"
+            android:textSize="18sp" />
     </android.support.design.widget.TextInputLayout>
 
 
@@ -36,15 +38,17 @@
         android:id="@+id/enterCollegeName"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
+
         <EditText
+            android:id="@+id/ecname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter College Name"
-            android:textColorHint="@color/loginColor"
+            android:inputType="text"
             android:text=""
             android:textColor="@color/colorPrimary"
-            android:textSize="18sp"
-            android:inputType="text"/>
+            android:textColorHint="@color/loginColor"
+            android:textSize="18sp" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -55,15 +59,17 @@
         android:id="@+id/enterYear"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
+
         <EditText
+            android:id="@+id/eyear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Year"
-            android:textColorHint="@color/loginColor"
+            android:inputType="text"
             android:text=""
             android:textColor="@color/colorPrimary"
-            android:inputType="text"
-            android:textSize="18sp"/>
+            android:textColorHint="@color/loginColor"
+            android:textSize="18sp" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -74,15 +80,17 @@
         android:id="@+id/enterProjectName"
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
+
         <EditText
+            android:id="@+id/epname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Project Name"
-            android:textColorHint="@color/loginColor"
+            android:inputType="text"
             android:text=""
             android:textColor="@color/colorPrimary"
-            android:inputType="text"
-            android:textSize="18sp"/>
+            android:textColorHint="@color/loginColor"
+            android:textSize="18sp" />
     </android.support.design.widget.TextInputLayout>
     <EditText
         android:layout_width="match_parent"
