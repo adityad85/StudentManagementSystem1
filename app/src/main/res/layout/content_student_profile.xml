@@ -35,26 +35,32 @@
                 android:layout_margin="10dp"
                 android:layout_centerHorizontal="true"
                 android:gravity="center">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="18sp"
-                android:text=""
-                android:textColorHint="#ffffff"
-                android:hint="IV"
-                android:gravity="right"
-                android:paddingRight="10dp"/>
+
                 <TextView
+                    android:id="@+id/year"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textSize="18sp"
+                    android:gravity="right"
+                    android:hint="IV"
+                    android:paddingRight="10dp"
                     android:text=""
+                    android:textColor="#ffffff"
                     android:textColorHint="#ffffff"
-                    android:hint="KIET"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/college"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:gravity="left"
-                    android:paddingLeft="10dp"/>
+                    android:hint="KIET"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:textSize="18sp" />
             </LinearLayout>
 
 
@@ -77,16 +83,18 @@
                 android:paddingTop="5dp"
                 android:id="@+id/Projects"
                 android:textColor="@color/greyLight"/>
+
             <TextView
+                android:id="@+id/projn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@id/Projects"
+                android:background="@drawable/back"
+                android:hint="CAS"
+                android:padding="10dp"
                 android:text=""
                 android:textColor="@color/greyLight"
-                android:hint="CAS"
-                android:textColorHint="@color/greyLight"
-                android:padding="10dp"
-                android:background="@drawable/back"/>
+                android:textColorHint="@color/greyLight" />
 
 
         </RelativeLayout>
@@ -109,16 +117,18 @@
                 android:text="Remarks"
                 android:textSize="18sp"
                 android:id="@+id/remarks"/>
+
             <TextView
+                android:id="@+id/remarks"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_below="@id/remarks"
+                android:background="@drawable/back"
+                android:hint="he is a very good student"
+                android:padding="10dp"
                 android:text=""
                 android:textColor="@color/greyLight"
-                android:hint="he is a very good student"
-                android:textColorHint="@color/greyLight"
-                android:padding="10dp"
-                android:background="@drawable/back"/>
+                android:textColorHint="@color/greyLight" />
 
         </RelativeLayout>
     </LinearLayout>

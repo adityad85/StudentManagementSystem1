@@ -30,18 +30,18 @@
         android:layout_marginTop="60dp"
         >
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/loginBackground"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:hint="EMAIL-ID"
-        android:textColorHint="@color/greyLight"
-        android:text=""
-        android:textColor="@color/colorPrimary"
-        android:inputType="textEmailAddress"
-        />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginBackground"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="EMAIL-ID"
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/greyLight" />
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -53,18 +53,19 @@
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="@color/colorPrimaryDark"
         >
-    <android.support.design.widget.TextInputEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_below="@id/loginEmailid"
-        android:hint="PASSWORD"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColorHint="@color/greyLight"
-        android:textColor="@color/colorPrimary"
-        android:inputType="textPassword"
-        />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginEmailid"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/greyLight" />
     </android.support.design.widget.TextInputLayout>
      <Button
          android:layout_width="100dp"
