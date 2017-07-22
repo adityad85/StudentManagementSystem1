@@ -38,11 +38,11 @@ public class AddStudent extends AppCompatActivity {
 
     public void jumpTOHomeScreen1(View v){
         ParseObject object=new ParseObject("Projects");
-        object.put("Name",name.getText());
-        object.put("College",college.getText());
-        object.put("Year",year.getText());
-        object.put("ProjName",proj.getText());
-        object.put("Remarks",remarks.getText());
+        object.put("Name",name.getText().toString());
+        object.put("College",college.getText().toString());
+        object.put("Year",year.getText().toString());
+        object.put("ProjName",proj.getText().toString());
+        object.put("Remarks",remarks.getText().toString());
         object.saveInBackground(new SaveCallback() {
             @Override
             public void done(ParseException e) {

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -26,7 +27,7 @@ public class Home extends AppCompatActivity {
     public RecyclerView recyclerView;
     public RecyclerView.LayoutManager layoutManager;
     public RecyclerView.Adapter adapter;
-    private ArrayList<Project> projectlist;
+    private ArrayList<Project> projectlist= new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +62,7 @@ public class Home extends AppCompatActivity {
 
             }
         }));
+        adapter.notifyDataSetChanged();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -107,6 +109,9 @@ public class Home extends AppCompatActivity {
                 p.setCollege(ob.get("College").toString());
                 projectlist.add(p);
             }
+            adapter =  new ProjectAdapters(projectlist,getApplicationContext());
+            recyclerView.setAdapter(adapter);
+            recyclerView.setItemAnimator(new DefaultItemAnimator());
         } catch (ParseException e) {
             e.printStackTrace();
         }
