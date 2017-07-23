@@ -93,7 +93,7 @@
                 android:layout_height="match_parent"
                 android:layout_below="@id/Projects"
                 android:background="@drawable/back"
-                android:hint="CAS"
+                android:hint=""
                 android:padding="10dp"
                 android:text=""
                 android:textColor="@color/greyLight"
@@ -128,7 +128,7 @@
                 android:layout_height="match_parent"
                 android:layout_below="@id/remarks1"
                 android:background="@drawable/back"
-                android:hint="he is a very good student"
+                android:hint=""
                 android:padding="10dp"
                 android:text=""
                 android:textColor="@color/greyLight"
@@ -143,6 +143,7 @@
             android:textColor="@color/whiteLight"
             android:text="DELETE"
             android:id="@+id/deleteButton"
+            android:onClick="delete"
             />
     </LinearLayout>
 

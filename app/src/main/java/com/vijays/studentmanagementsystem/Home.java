@@ -110,6 +110,7 @@ public class Home extends AppCompatActivity {
             List<ParseObject> a= q.find();
             for(ParseObject ob:a){
                 Project p=new Project();
+                p.setObId(ob.getObjectId().toString());
                 p.setName(ob.get("Name").toString());
                 p.setProjName(ob.get("ProjName").toString());
                 p.setRemarks(ob.get("Remarks").toString());

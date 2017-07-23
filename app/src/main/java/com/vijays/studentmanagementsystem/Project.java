@@ -11,7 +11,7 @@ import java.util.jar.Attributes;
  */
 
 public class Project implements Parcelable {
-    public String Name,Year,College,ProjName,Remarks;
+    public String Name,Year,College,ProjName,Remarks,obId;
     public Project(){
 
     }
@@ -35,7 +35,7 @@ public class Project implements Parcelable {
             return new Project[size];
         }
     };
-
+    public void setObId(String a){this.obId=a;}
     public  void setName(String a){
         this.Name=a;
     }
@@ -70,7 +70,7 @@ public class Project implements Parcelable {
     public String getProjName(){
         return ProjName;
     }
-
+    public String getObId(){return obId;}
     @Override
     public int describeContents() {
         return 0;
