@@ -21,7 +21,7 @@
             android:id="@+id/ename"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Name"
+            android:hint="Enter Full Name"
             android:inputType="text"
             android:text=""
             android:textColor="@color/colorPrimary"
@@ -94,7 +94,7 @@
     </android.support.design.widget.TextInputLayout>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:id="@+id/enterTextArea"
         android:layout_below="@id/enterProjectName"
         android:layout_marginLeft="20dp"
@@ -102,9 +102,11 @@
         android:paddingTop="10dp"
         android:inputType="textImeMultiLine"
         android:background="@drawable/back"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30dp"
         android:hint="Remarks"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal"
+        android:textColorHint="@color/loginColor"
+        android:textColor="@color/colorPrimary"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
