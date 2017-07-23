@@ -28,12 +28,14 @@ public class Login extends AppCompatActivity {
         ParseUser.logInInBackground(username.getText().toString(), password.getText().toString(), new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException e) {
-                Intent i = new Intent(getApplicationContext(), Home.class);
-                startActivity(i);
-                finish();
                 if(e!=null){
                     Toast.makeText(getApplicationContext(),"Please Enter Correct Credentials",Toast.LENGTH_LONG).show();
                 }
+                else{
+                Intent i = new Intent(getApplicationContext(), Home.class);
+                startActivity(i);
+                finish();}
+
             }
 
         });
