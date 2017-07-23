@@ -32,36 +32,39 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_below="@id/studentOne"
-                android:layout_margin="10dp"
-                android:layout_centerHorizontal="true"
-                android:gravity="center">
-
+                android:id="@+id/yearLL">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Year - "
+                android:textColor="@color/whiteLight"
+                android:gravity="right"
+                />
                 <TextView
-                    android:id="@+id/year"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/whiteLight"
+                    android:textColorHint="@color/whiteLight"
                     android:hint="IV"
-                    android:paddingRight="10dp"
-                    android:text=""
-                    android:textColor="#ffffff"
-                    android:textColorHint="#ffffff"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/college"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:gravity="left"
-                    android:hint="KIET"
-                    android:paddingLeft="10dp"
-                    android:text=""
-                    android:textColor="#ffffff"
-                    android:textColorHint="#ffffff"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                    android:id="@+id/year"/>
+</LinearLayout>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/college"
+             android:layout_below="@id/yearLL"
+             android:gravity="center"
+             android:text=""
+             android:textColor="@color/whiteLight"
+             android:textColorHint="@color/whiteLight"
+             android:hint="Krishna institute of engineering and technlogy"
+             android:layout_marginTop="10dp"/>
+
+
 
 
         </RelativeLayout>
@@ -116,13 +119,14 @@
                 android:layout_marginTop="5dp"
                 android:text="Remarks"
                 android:textSize="18sp"
+                android:id="@+id/remarks1"
                 />
 
             <TextView
                 android:id="@+id/remarks"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/remarks"
+                android:layout_below="@id/remarks1"
                 android:background="@drawable/back"
                 android:hint="he is a very good student"
                 android:padding="10dp"
@@ -131,6 +135,15 @@
                 android:textColorHint="@color/greyLight" />
 
         </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/whiteLight"
+            android:text="DELETE"
+            android:id="@+id/deleteButton"
+            />
     </LinearLayout>
 
 </RelativeLayout>
